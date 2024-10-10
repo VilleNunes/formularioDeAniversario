@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+
+    <div class="img-fundo">
+      <img src="assets/icons/Logo.svg" alt="">
+      <h1>Festivite</h1>
+      <p>Crie um convite digital para o seu evento</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="form-container">
+      <h2>Crie seu convite</h2>
+    
+      <form action="">
+        <fieldset>
+          <legend class="icone flex"><img src="assets/icons/calendar.png" alt=""><p>Sobre o evento</p></legend>
+          
+          <div class="input-container">
+            <label for="titulo">Título</label>
+            <input type="text" placeholder="Nome do evento" id="titulo" name="titulo" required>
+          </div>
+          
+          <div  class="flex">
+            <div class="input-container flex1">
+              <label for="inicio">Inicio</label>
+              <input type="datetime-local" id="inicio" name="inicio" required>
+            </div>
+            <div class="input-container flex1">
+              <label for="fim">Fim</label>
+              <input type="datetime-local" id="fim" name="fim" required>
+            </div>
+          </div>
+
+          <div class="flex">
+            <div class="input-container flex1">
+              <label for="tipo">Tipo</label>
+              <input type="checkbox">
+              <input type="checkbox">
+            </div>
+            <div class="input-container flex2">
+              <label for="url">Local</label>
+              <input type="url" placeholder="Link ou Endereço" id="fim" name="url" required>
+            </div>
+          </div>
+          
+          <div class="input-container">
+            <label for="mensagem">Descrição</label>
+            <textarea name="mensagem" id="mensagem"></textarea>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
